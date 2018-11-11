@@ -118,7 +118,8 @@ void setup() {
 }
 
 //Loop starts here.....
-void loop() {
+void loop() 
+{
         //Line following starts here.....
         read_sensors();
         if(cur_location == 0){//000
@@ -192,18 +193,17 @@ void right(){
 	    digitalWrite(right_dir,LOW);
 	    digitalWrite(left_dir,LOW);
 	    analogWrite(right_speed,0);
-	    analogWrite(left_speed,250);
+	    analogWrite(left_speed,300);
 }
 void straight(){
 	    digitalWrite(right_dir,HIGH);
 	    digitalWrite(left_dir,LOW);
-	    analogWrite(right_speed,300);
-	    analogWrite(left_speed,200); 
+	    analogWrite(right_speed,200);
+	    analogWrite(left_speed,300); 
 }
 void left(){
 	    digitalWrite(right_dir,HIGH);
 	    digitalWrite(left_dir,HIGH);
-	    analogWrite(right_speed,250);
+	    analogWrite(right_speed,200);
 	    analogWrite(left_speed,0);
 }
-
